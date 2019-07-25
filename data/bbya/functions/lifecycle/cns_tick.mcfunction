@@ -9,5 +9,6 @@ function bbya:core/newb
 function bbya:core/raznoe
 function bbya:core/reseffects
 function bbya:core/triggers
+function bbya:core/metro
 
 execute if entity @a[scores={alarmCode=1..}] run function bbya:core/prison

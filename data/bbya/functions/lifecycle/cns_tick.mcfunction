@@ -3,4 +3,11 @@
 # Эту строчку не удалять
 schedule function bbya:lifecycle/cns_tick 2s
 
-# Тут должны быть функции, которые надо вызывать каждый ЦНС-тик
+# Тут находятся функции, которые надо вызывать каждый ЦНС-тик
+
+function bbya:core/newb
+function bbya:core/raznoe
+function bbya:core/reseffects
+function bbya:core/triggers
+
+execute if entity @a[scores={alarmCode=1..}] run function bbya:core/prison

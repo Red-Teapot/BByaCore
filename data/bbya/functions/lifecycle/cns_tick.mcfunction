@@ -1,7 +1,7 @@
 # Эта функция вызывается каждые две секунды (ЦНС-тик)
 
 # Эту строчку не удалять
-schedule function bbya:lifecycle/cns_tick 2s
+schedule function bbya:lifecycle/cns_tick 3s
 
 # Тут находятся функции, которые надо вызывать каждый ЦНС-тик
 

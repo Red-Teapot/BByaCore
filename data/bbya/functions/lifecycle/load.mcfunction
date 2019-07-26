@@ -1,4 +1,4 @@
 # Эта функция вызывается каждый раз при запуске сервера или перезагрузке датапаков
 
 # Стартуем тики ЦНС
-schedule function bbya:lifecycle/cns_tick 2s
+function bbya:lifecycle/cns_tick

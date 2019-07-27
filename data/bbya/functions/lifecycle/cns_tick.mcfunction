@@ -6,8 +6,6 @@ schedule function bbya:lifecycle/cns_tick 3s
 # Сохраняем текущее игровое время в переменную, чтобы можно было вызывать функции раз в день
 execute store result score .Time CustomID run time query daytime
 
-execute if score .Time CustomID matches 100..159 run tellraw @a "Morning fuckers"
-
 # Тут находятся функции, которые надо вызывать каждый ЦНС-тик
 
 function bbya:core/newb

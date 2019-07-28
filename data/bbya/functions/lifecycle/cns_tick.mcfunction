@@ -26,6 +26,9 @@ execute if score .Time CustomID matches 12661..12720 run function bbya:core/adve
 # Реклама вечером
 execute if score .Time CustomID matches 23300..23359 run function bbya:core/advertisement
 
+# Лотерея и ночь бедняка
+execute if score .Time CustomID matches 0..59 run function bbya:core/lottery
+
 # Навыки
 execute if entity @a[scores={SkillStoneGive=16..}] run function bbya:skills/stone
 execute if entity @a[scores={SkillNuggetGive=9..}] run function bbya:skills/nuggets

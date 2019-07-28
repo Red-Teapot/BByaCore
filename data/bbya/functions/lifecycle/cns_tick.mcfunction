@@ -25,3 +25,11 @@ execute if score .DayNalog CustomID matches 28800.. run function bbya:core/nalog
 execute if score .Time CustomID matches 12661..12720 run function bbya:core/advertisement
 # Реклама вечером
 execute if score .Time CustomID matches 23300..23359 run function bbya:core/advertisement
+
+# Навыки
+execute if entity @a[scores={SkillStoneGive=16..}] run function bbya:skills/stone
+execute if entity @a[scores={SkillNuggetGive=9..}] run function bbya:skills/nuggets
+execute if entity @a[scores={SkillTearGive=16..}] run function bbya:skills/ghasts
+execute if entity @a[scores={SkillLeatherGive=16..}] run function bbya:skills/leather
+function bbya:skills/elytra
+function bbya:skills/horse

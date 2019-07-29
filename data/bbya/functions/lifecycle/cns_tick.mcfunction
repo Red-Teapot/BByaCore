@@ -45,3 +45,5 @@ function bbya:skills/horse
 # Электростанции
 execute if score .PPCoal CustomID matches -999..75 run function bbya:powerstations/coal_low
 execute if score .PPCoal CustomID matches 76.. if entity @e run function bbya:powerstations/coal_high
+execute if score .PPWheat CustomID matches -999..191 run function bbya:powerstations/wheat_low
+execute if score .PPWheat CustomID matches 192.. if entity @e run function bbya:powerstations/wheat_high

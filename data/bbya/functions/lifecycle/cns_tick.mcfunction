@@ -6,6 +6,9 @@ schedule function bbya:lifecycle/cns_tick 3s
 # Сохраняем текущее игровое время в переменную, чтобы можно было вызывать функции раз в день
 execute store result score .Time CustomID run time query daytime
 
+# Сохраняем текущее количество игроков на сервере в переменную
+execute store result score .NumberOfPlayers CustomID run list
+
 # Тут находятся функции, которые надо вызывать каждый ЦНС-тик
 
 function bbya:core/newb
@@ -38,3 +41,7 @@ execute if entity @a[scores={SkillTearGive=16..}] run function bbya:skills/ghast
 execute if entity @a[scores={SkillLeatherGive=16..}] run function bbya:skills/leather
 function bbya:skills/elytra
 function bbya:skills/horse
+
+# Электростанции
+execute if score .PPCoal CustomID matches -999..75 run function bbya:powerstations/coal_low
+execute if score .PPCoal CustomID matches 76.. if entity @e run function bbya:powerstations/coal_high

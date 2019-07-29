@@ -21,9 +21,7 @@ scoreboard objectives add PlayerID dummy
 scoreboard objectives add PlayerID2 dummy
 scoreboard objectives add Remelted_Dwarf dummy
 
-# Должно быть aviate_one_cm
-scoreboard objectives add SkillElytraGive minecraft.custom:minecraft.fly_one_cm "Пройдено см на элитре"
-
+scoreboard objectives add SkillElytraGive minecraft.custom:minecraft.aviate_one_cm "Пройдено см на элитре"
 scoreboard objectives add SkillElytraKM dummy "\"Километров на элитре\""
 scoreboard objectives add SkillHorseGive minecraft.custom:minecraft.horse_one_cm "Пройдено см на лошади"
 scoreboard objectives add SkillHorseKM dummy "\"Километров на лошади\""

@@ -49,3 +49,6 @@ execute if score .PPWheat CustomID matches -999..191 run function bbya:powerstat
 execute if score .PPWheat CustomID matches 192.. if entity @a run function bbya:powerstations/wheat_high
 execute if score .PPAlm CustomID matches -999..191 run function bbya:powerstations/diamond_low
 execute if score .PPAlm CustomID matches 192.. if entity @a run function bbya:powerstations/diamond_high
+
+# Дацан Будды
+execute if block 1196 107 45 minecraft:torch if block 1196 107 41 minecraft:torch run function bbya:buddha/check
